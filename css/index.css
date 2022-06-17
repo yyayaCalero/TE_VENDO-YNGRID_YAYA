@@ -1,0 +1,85 @@
+
+h1{
+    padding: 1rem;
+    color:darkred;
+    text-align: center;
+ }
+
+ .color-fondo-principal {
+    background-color: yellow;
+    color:blue;
+    margin: 0;
+    padding: 1rem 1rem;
+ }
+
+ .logo{
+    padding: 0 2rem;
+    animation-name: animacionLogo;
+    animation-duration: 3s;
+ }
+
+ .link{
+    padding: 1rem 1.2rem;
+    transition: all 0.5s;
+    border-color:blue;
+    color:blue;
+ }
+
+ .link:hover{
+    background-color: blue;
+    color:white;
+ }
+
+ .contenido{
+    padding:1rem;
+ }
+ .contenido__img{
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin-bottom:1rem ;
+    margin-top:1rem ;
+    
+ }
+
+ .contenido__caja{
+    background-color: lightblue;
+    border-radius: 1rem;
+    margin-bottom:1rem ;
+    margin-top:1rem ;
+ }
+
+ .contenido__descripcion{
+    margin:1rem;
+    overflow: auto;
+ }
+
+ .contenido__favorito{
+    margin:1rem;
+    height: 20%;
+    max-height: 20%;
+    font-weight: bolder;
+    color:crimson;
+ }
+
+ .footer{
+    background-color: yellow;
+    color:blue;
+    margin: 0;
+    padding: 1rem 1rem;
+ }
+
+ .fila-separador {
+   display: flex;
+   justify-content: space-around;
+}
+
+
+ @keyframes animacionLogo{
+
+    0%{
+       transform: rotate(25deg) ;
+    }
+    50%{
+       transform: rotate(-25deg) ;
+    }
+ }
