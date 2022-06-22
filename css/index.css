@@ -80,6 +80,11 @@ header .header__img{
    color:white;
 }
 
+.menu__item{
+   border-color:blue;
+   border: 1rem;
+}
+
 /*CONTENIDO INDEX*/
 
 .contenido {
@@ -88,6 +93,10 @@ header .header__img{
    flex-direction: column;  
    justify-content: space-around;
    flex-wrap: wrap;
+}
+section picture{
+   overflow: hidden;
+   border-radius: 1rem;
 }
 
 .contenido__articulo {
@@ -100,16 +109,20 @@ header .header__img{
 .contenido__img{
    max-width: 500px;
    min-width: 500px;
-   border-radius: 1rem;
    box-sizing: border-box;
+}
+
+.contenido__img:hover {
+   -webkit-transform:scale(1.3);
+   transform:scale(1.3);
 }
 
 
 
 .contenido__descripcion{
    background-color: lightblue;
-   max-width: 700px;
-   min-width: 700px;
+   max-width: 60%;
+   min-width: 60%;
    border-radius: 1rem;
    margin: 0 1rem;
    align-content: space-around;
@@ -197,6 +210,63 @@ header .header__img{
  }
 
 
+ .numero1 {
+   width: 60px;
+   height: 60px;
+   background-color: cadetblue;
+   border-radius: 80%;
+   animation: animacion-numero1 1s;
+   animation-fill-mode: forwards;
+   text-align: center;
+   padding: 1rem 0;
+   color:white;
+ }
+
+ 
+ .numero2 {
+   width: 60px;
+   height: 60px;
+   background-color: cadetblue;
+   border-radius: 80%;
+   animation: animacion-numero2 1s;
+   animation-fill-mode: forwards;
+   text-align: center;
+   padding: 1rem 0;
+   color:white;
+ }
+
+ 
+ .numero3 {
+   width: 60px;
+   height: 60px;
+   background-color: cadetblue;
+   border-radius: 80%;
+   animation: animacion-numero3 1s;
+   animation-fill-mode: forwards;
+   text-align: center;
+   padding: 1rem 0;
+   color:white;
+ }
+
+ 
+.numero1:hover{
+   background-color: blue;
+   color:white;
+}
+
+
+.numero2:hover{
+   background-color: blue;
+   color:white;
+}
+
+
+.numero3:hover{
+   background-color: blue;
+   color:white;
+}
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -215,11 +285,10 @@ header .header__img{
    }
    
    .contenido__descripcion{
-      max-width: 300px;
-      min-width: 300px;
       align-content: space-around;
       font-size: x-large;
       margin: 0 0;
+      max-width: 100%;
    }
 
    .contenido__fila{
@@ -229,19 +298,30 @@ header .header__img{
    }
    .contenido__fila .pasos{
      
-      width: 90%;
+      width: 100%;
       margin:1rem;
 
    }
    .formulario{
-      padding: 0 1rem;
+      padding: 0rem 1rem;
    }
 
    .formulario__fila{
       padding:1rem 0;
    }
 
-   
+   .contenido__fila .detalle{
+      width: 100%;
+   }
+   .numero1{
+      display: none;
+   }
+   .numero2{
+      display: none;
+   }
+   .numero3{
+      display: none;
+   }
 }
 
 @keyframes animacionLogo{
@@ -251,5 +331,27 @@ header .header__img{
    }
    50%{
       transform: rotate(-25deg) ;
+   }
+}
+
+ 
+@keyframes animacion-numero1 {
+   100% {
+     transform: translateX(30px);
+     text-align: center;
+   }
+}
+
+@keyframes animacion-numero2 {
+   100% {
+     transform: translateX(30px);
+     text-align: center;
+   }
+}
+
+@keyframes animacion-numero3 {
+   100% {
+     transform: translateX(30px);
+     text-align: center;
    }
 }
