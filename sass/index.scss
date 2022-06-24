@@ -1,0 +1,15 @@
+/*MISC*/
+
+@import './misc/normalize';
+@import './misc/variables';
+
+
+/*PARTIALS*/
+
+@import './partials/header';
+@import './partials/contenido';
+@import './partials/footer';
+
+/*MEDIA - KEYFRAME*/
+@import './media_keyframe/mediaqueries.scss';
+@import './media_keyframe/keyframes.scss';
