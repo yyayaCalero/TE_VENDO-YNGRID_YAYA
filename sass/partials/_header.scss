@@ -1,0 +1,48 @@
+/*HEADER*/
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $fondo-amarillo;
+    font-family: 'Raleway';
+    color:$color-azul;
+    padding: 1rem 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+  /*HEADER-MENU*/
+ 
+    .menu{
+     display: flex;
+     gap: 2rem;
+     flex-direction: row;
+     flex-wrap: wrap;
+     
+
+      &__link{
+         padding: 1rem 1.2rem;
+         text-decoration: none;
+         font-weight: bold;
+         font-size: large;
+        
+
+         &:hover{
+          background-color: $fondo-plomo;
+          color:$color-blanco;
+          border:   crimson;
+          border-radius: 1rem;
+         }
+      }
+      &__item{
+         border: 1rem;
+      }
+    }
+ 
+  /*HEADER-LOGO*/
+    .img-logo{
+     max-width: 90px;
+     animation-name: animacionLogo;
+     animation-duration: 3s;
+    }
+ }

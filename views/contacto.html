@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="VENDER INMUEBLES">
+    <meta name="description" content="En esta sección podrás tener la opción de contactarte con nosotros">
+    <title>Te vendo, contacto</title>
+    <link rel="stylesheet" href="../css/traslated.css">
+</head>
+<body class="layout">
+    <header class="header">
+        <picture>
+            <img class="img-logo"src="../img/logo.svg" alt="logo" >
+        </picture>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a class="menu__link" href="../index.html" >HOME</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="publicar.html">PUBLICAR</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="favoritos.html">FAVORITOS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="" method="POST" class="formulario">
+            <div class="formulario__fila">
+                <label for="nombre" class="formulario__item">Nombres:</label>
+                <input type="text" name="nombre" placeholder="nombres" class="formulario__item">
+            </div>
+            <div class="formulario__fila">
+                <label for="apellido" class="formulario__item">Apellidos:</label>
+                <input type="text" name="apellido" placeholder="apellidos" class="formulario__item">
+            </div>
+            <div class="formulario__fila">
+                <label class="formulario__item">Genero:</label>
+                <input type="radio" name="genero" value="femenino" class="formulario__item">
+                <label for="femenino" class="formulario__item">Femenino</label>
+                <input type="radio" name="genero" value="masculino" class="formulario__item">
+                <label for="masculino" class="formulario__item">Masculino</label>
+                <input type="radio" name="genero" value="otro" class="formulario__item">
+                <label for="otro" class="formulario__item">Otro</label>
+            </div>
+            <div class="formulario__fila">
+                <label for="correo" class="formulario__item">Correo:</label>
+                <input type="email" name="correo" placeholder="correo@correo.com" class="formulario__item">
+            </div>
+            <div class="formulario__fila">
+                <label for="consulta" class="formulario__item">Consulta:</label>
+                <textarea name="consulta" placeholder="brindar mas detalle" class="formulario__item"></textarea>
+            </div>
+            <div class="formulario__fila">
+                <input type="submit" class="formulario__btn" value="Enviar">
+                <input type="reset" class="formulario__btn" value="Borrar">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Direccion: Cooperativa Residencial la Unión Mz H Lote 25 San Martin de Porres</p>
+        <span>Derechos reservados</span>
+    </footer>
+</body>
+</html>

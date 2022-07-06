@@ -1,0 +1,18 @@
+/*MISC*/
+
+@import './misc/normalize';
+@import './misc/variables';
+
+/*PARTIALS*/
+
+@import './partials/header';
+@import './partials/footer';
+@import './partials/contenidoinmuebles';
+@import './partials/contenidootros';
+@import './partials/contenidocontacto';
+
+
+
+/*MEDIA - KEYFRAME*/
+@import './media_keyframe/mediaqueries';
+@import './media_keyframe/keyframes';

@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+
+    /*CONTENIDO*/
+    .contenido {
+       align-items: center;
+ 
+      .articulo {
+         flex-direction: column;
+ 
+       &__img{
+          max-width: 250px;
+          min-width: 250px;
+       }
+       &__descripcion{
+          align-content: space-around;
+          font-size: x-large;
+          margin: 0 0;
+          max-width: 100%;
+       }
+      }
+    }
+
+    .formulario{
+
+      padding: 0rem 1rem;
+
+      &__fila{
+         padding:1rem 0;
+      }
+   }
+
+   .contenido__fila{
+      .numero1{
+         display: none;
+      }
+      .numero2{
+         display: none;
+      }
+      .numero3{
+         display: none;
+      }
+   }
+  
+
+ }

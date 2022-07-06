@@ -1,0 +1,42 @@
+/*normalize*/
+//@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&family=Raleway:wght@100;200&family=Zilla+Slab:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&family=Dancing+Script&family=Raleway:wght@100;200&family=Zilla+Slab:ital,wght@1,300&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.layout{
+    display: grid;
+    grid-template-areas:
+      "header"
+      "contenido "
+      "footer";
+    grid-template-rows: auto; 
+    grid-template-columns:auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0px;
+}
+
+img{
+   width: 100%;
+}
+
+ul{
+     list-style-type: none;
+}
+
+h1{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   text-align: center;
+   padding: 20px;
+   color:crimson;
+}
+
+h2{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bolder;
+   text-align: center;
+}

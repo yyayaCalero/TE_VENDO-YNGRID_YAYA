@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="keywords" content="INMUEBLES, VENTA CASA, VENTA DEPARTAMENTO, VENTA TERRENO">
+    <meta name="description" content="Bienvenido a la página web número 
+    1 en ventas de inmuebles a nivel nacional, aqui podras encontrar 
+    inmuebles  en venta de tipo: terreno, departamento y casa, sus respectivos precios y ubicaciones.">
+
+    <title>TeVendo, página principal</title>
+    <link rel="stylesheet" href="./css/traslated.css">
+</head>
+<body class="layout">
+    <header  class="header">
+        <picture>
+            <img class="img-logo" src="./img/logo.svg" alt="logo" >
+        </picture>
+        <nav >
+            <ul class="menu">
+                <li>
+                    <a class="menu__link" href="">HOME</a>
+                </li>
+                <li>
+                    <a class="menu__link"  href="./views/publicar.html">PUBLICAR</a>
+                </li>
+                <li>
+                    <a  class="menu__link"  href="./views/favoritos.html">FAVORITOS</a>
+                </li>
+                <li>
+                    <a class="menu__link"   href="./views/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a  class="menu__link"  href="./views/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtro">
+            <form class="filtro__form">
+                <div class="filtro__form__item">
+                    <label>Precio</label>
+                    <div>
+                        <input type="text" name="precioDesde" placeholder="desde" >
+                        <label>-</label>
+                        <input type="text" name="precioHasta" placeholder="hasta" >
+                    </div>
+                </div>
+                <div class="filtro__form__item">
+                    <label for="ubicacion" >Ubicación</label>
+                    <input type="text" name="ubicacion" placeholder="ubicación" >
+                </div>
+                <div class="filtro__form__item">
+                    <label for="tipo" >Tipo</label>
+                    <select name="tipo">
+                        <option value="Terreno">Terreno</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Departamento">Departamento</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section class="contenido">
+            <article class="articulo">
+                <picture class="articulo__picture">
+                    <img id="casaventa1" class="articulo__img"  alt="casa en venta 1" >
+                </picture>
+                <div class="articulo__descripcion">
+                    <div class="articulo__descripcion__titulo">
+                        <div class="titulo__precio">$50,000</div>
+                        <div class="titulo__ubicacion">Ica-Pisco-Pisco</div>
+                        <div class="titulo__tipo">Casa</div>
+                    </div>
+                    <div class="articulo__descripcion__detalle">
+                        <div class="inmueble">         
+                            URBANIZACIÓN HABILITACIÓN URBANA EL TREBOL MANZANA H LOTE 12 DEL DISTRITO Y PROVINCIA DE PISCO Y DEPARTAMENTO DE ICA
+                        </div>
+                        <div class="favorito">
+                            <label for="favorito1">Marcar favorito</label>
+                            <input type="checkbox" value="favorito1">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="articulo">
+                <picture class="articulo__picture">
+                    <img id="casaventa2" class="articulo__img"  alt="casa en venta 2" >
+                </picture>
+                <div class="articulo__descripcion">
+                    <div class="articulo__descripcion__titulo">
+                        <div class="titulo__precio">$60,000</div>
+                        <div class="titulo__ubicacion">Lambayeque-Chiclayo-Chiclayo</div>
+                        <div class="titulo__tipo">Casa</div>
+                    </div>
+                    <div class="articulo__descripcion__detalle">
+                        <div class="inmueble">         
+                            IMUEBLE INDEPENDIZADO BAJO EL RÉGIMEN DE PROPIEDAD EXCLUSIVA COMÚN. UBICACIÓN: SECCIÓN 104 (GARAJE) MZ K-2 LOTE 16 URB QUINTA MURO DE CHICLAYO II ETAPA, DISTRITO CHICLAYO, PROVINCIA CHICLAYO, DEPARTAMENTO LAMBAYEQUE, INSCRITO EN LA PARTIDA ELECTRÓNICA Nº11184209 DEL REGISTRO DE PROPIEDAD INMUEBLE - REGISTRO DE PREDIOS DE LA ZONA REGISTRAL Nº II - SEDE CHICLAYO.
+                        </div>
+                        <div class="favorito">
+                            <label for="favorito1">Marcar favorito</label>
+                            <input type="checkbox" value="favorito1">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Direccion: Cooperativa Residencial la Unión Mz H Lote 25 San Martin de Porres</p>
+        <span>Derechos reservados</span>
+    </footer>
+</body>
+</html>
